@@ -1,8 +1,92 @@
+
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import { useEffect } from 'react';
 
 export default function Home() {
+
+
+
+  useEffect(() => {
+    // Get the elements
+    // const menuOptionsDiv = document.querySelectorAll('.menu-options__item');
+
+    // const mainBgsDiv = document.querySelector('.main-bg');
+    // console.log(menuOptionsDiv);
+    // const ai1Div = document.querySelector('.ai-1');
+
+    // // Add event listener for mouseenter
+    // // menuOptionsDiv.
+    // [...menuOptionsDiv].map((item, i) => {
+    //   // console.log(item.getAttribute('data-menu-item').slice(-1));
+    //   const hoveredId = item.getAttribute('data-menu-item').slice(-1)
+    //   item.addEventListener('mouseenter', (e) => {
+
+    //     const aiDiv = document.querySelector(`.ai-${hoveredId}`);
+
+    //     aiDiv.classList.add('item-hovered');
+
+    //   })
+
+    // })
+
+    const mainBgsDiv = document.querySelector('.main-bg');
+    const menuOptDiv = document.querySelectorAll('.menu-options__item');
+    const menuOptImgs = document.querySelectorAll('.main-bg__asset-items img');
+    const mainBgSky = document.querySelector('.main-bg__sky');
+    const mainFrontSprites = document.querySelector('.front-spites');
+
+
+    [...menuOptDiv].forEach((item, i) => {
+      console.log(item);
+
+      item.addEventListener('mouseenter', (e) => {
+        console.log('triggered', item.getAttribute('data-menu-item').slice(-1));
+        [...menuOptImgs][i].classList.add('item-hovered')
+        item.classList.add('item-hovered')
+        mainBgsDiv.classList.add('item-hovered')
+        mainBgSky.classList.add('item-hovered')
+        mainFrontSprites.classList.add('item-hovered')
+
+      })
+
+
+      item.addEventListener('mouseleave', (e) => {
+        console.log('Left');
+        [...menuOptImgs][i].classList.remove('item-hovered')
+        item.classList.remove('item-hovered')
+        mainBgsDiv.classList.remove('item-hovered')
+        mainBgSky.classList.remove('item-hovered')
+        mainFrontSprites.classList.remove('item-hovered')
+
+      })
+
+    });
+
+    // [...menuOptImgs].forEach((item, i) => {
+    //   console.log(item);
+    //   item.classList.add('sss')
+    // });
+
+
+    // menuOptionsDiv.addEventListener('mouseenter', (e) => {
+    //   ai1Div.classList.add('item-hovered');
+    //   console.log(e.target.getAttribute('data-menu-item'));
+    //   menuOptionsDiv.classList.add('item-hovered')
+    //   mainBgsDiv.classList.add('item-hovered')
+    // });
+
+    // // Add event listener for mouseleave (optional: to remove the class when mouse leaves)
+    // menuOptionsDiv.addEventListener('mouseleave', () => {
+    //   ai1Div.classList.remove('item-hovered');
+    //   menuOptionsDiv.classList.remove('item-hovered')
+    //   mainBgsDiv.classList.remove('item-hovered')
+    // });
+
+  }, []);
+
+
   return (
     <div className={styles.container}>
       <Head>
@@ -11,59 +95,67 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+      <div>
+        <div className='main-bg'>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+          <div className='front-spites'>
+            <img src="sky-bg-4.png" alt="island" />
+          </div>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+          <div className='main-bg__img'>
+            <img src="main-island.svg" alt="island" />
+            {/* <img src="sky-bg-4.png" alt="island" /> */}
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+            <div className='main-bg__asset-items'>
+              <img className='ai-1' src="i1.png" alt="" />
+            </div>
+            <div className='main-bg__asset-items'>
+              <img className='ai-2' src="i2.png" alt="" />
+            </div>
+            <div className='main-bg__asset-items'>
+              <img className='ai-3' src="i3.png" alt="" />
+            </div>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+          </div>
 
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+          <div className='menu-options'>
+            <div data-menu-item='dm-1' className='menu-options__item menu-options__item--i1'>
+              <div className='menu-tip'>
+                <div className='menu-tip__info'>
+                  <h4>Paragraph</h4>
+                  <p>This is some sample Text</p>
+                </div>
+              </div>
+            </div>
+            <div data-menu-item='dm-2' className='menu-options__item menu-options__item--i2'>
+              <div className='menu-tip'>
+                <div className='menu-tip__info'>
+                  <h4>Paragraph</h4>
+                  <p>This is some sample Text</p>
+                </div>
+              </div>
+            </div>
+
+            <div data-menu-item='dm-3' className='menu-options__item menu-options__item--i3'>
+              <div className='menu-tip'>
+                <div className='menu-tip__info'>
+                  <h4>Paragraph</h4>
+                  <p>This is some sample Text</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div className='main-bg__sky'>
+            <img className='mb-sk-1' src="sky-bg-1.png" alt="island" />
+            <img className='mb-sk-2' src="sky-bg-2.png" alt="island" />
+            <img className='mb-sk-3' src="sky-bg-3.png" alt="island" />
+          </div>
         </div>
-      </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
+      </div>
+
     </div>
   )
 }

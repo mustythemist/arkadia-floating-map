@@ -19,8 +19,20 @@ a {
   html {
     color-scheme: dark;
   }
+
   body {
     color: white;
-    background: black;
+    background: #37053d;
+    overflow: hidden;
   }
+}
+
+.ts1 {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.main-bg img {
+  width: 100%;
 }
