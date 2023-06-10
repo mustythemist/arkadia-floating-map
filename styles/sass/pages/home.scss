@@ -32,6 +32,7 @@
       filter: brightness(1.4);
     }
   }
+
 }
 
 
@@ -119,8 +120,6 @@
 
 
 
-
-
 .main-bg__sky {
   position: absolute;
   top: 0;
@@ -146,6 +145,34 @@
     object-fit: cover;
   }
 
+  .mb-sk-2 {
+    animation-name: cloudAnim_1;
+    animation-duration: 18s;
+    animation-timing-function: ease;
+    // animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+  }
+
+}
+
+
+@keyframes cloudAnim_1 {
+  0% {
+    transform: scale(1) translateX(0);
+  }
+  25% {
+    transform: scale(1.03) translateX(5px);
+  }
+  50% {
+    transform: scale(1.05) translateX(15px);
+  }
+  75% {
+    transform: scale(1.02) translateX(5px);
+  }
+  75% {
+    transform: scale(1) translateX(0);
+  }
+
 }
 
 .main-bg__sky.item-hovered {
@@ -166,7 +193,51 @@
   img {
     width: 100%;
   }
+  .fs-absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .fs-sp-1 {
+    animation-name: fs_cloud_anim_1;
+    animation-name: cloudAnim_1;
+    animation-duration: 18s;
+    animation-timing-function: ease;
+    // animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+  }
+
 }
+
+@keyframes fs_cloud_anim_1 {
+  0% {
+    transform: scale(1) translateX(0);
+  }
+  25% {
+    transform: scale(1.03) translateX(5px);
+  }
+  50% {
+    transform: scale(1.05) translateX(15px);
+  }
+  75% {
+    transform: scale(1.02) translateX(5px);
+  }
+  75% {
+    transform: scale(1) translateX(0);
+  }
+
+}
+
+
 
 .front-spites.item-hovered {
   filter: blur(9px);

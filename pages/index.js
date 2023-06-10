@@ -99,20 +99,25 @@ export default function Home() {
         <div className='main-bg'>
 
           <div className='front-spites'>
-            <img src="sky-bg-4.png" alt="island" />
+            <img className='fs-sp-1' src="sky-bg-4.png" alt="island" />
+            <div className='fs-absolute'>
+              <img className='fs-blsp-1' src="bl-1.png" alt="island" />
+              <img className='fs-blsp-2' src="bl-2.png" alt="island" />
+              <img className='fs-blsp-3' src="bl-3.png" alt="island" />
+            </div>
           </div>
 
           <div className='main-bg__img'>
-            <img src="main-island.svg" alt="island" />
+            <img src="island-main2.png" alt="island" />
             {/* <img src="sky-bg-4.png" alt="island" /> */}
 
-            <div className='main-bg__asset-items'>
+            <div className='main-bg__asset-items '>
               <img className='ai-1' src="i1.png" alt="" />
             </div>
-            <div className='main-bg__asset-items'>
+            <div className='main-bg__asset-items '>
               <img className='ai-2' src="i2.png" alt="" />
             </div>
-            <div className='main-bg__asset-items'>
+            <div className='main-bg__asset-items '>
               <img className='ai-3' src="i3.png" alt="" />
             </div>
 
@@ -151,6 +156,8 @@ export default function Home() {
             <img className='mb-sk-1' src="sky-bg-1.png" alt="island" />
             <img className='mb-sk-2' src="sky-bg-2.png" alt="island" />
             <img className='mb-sk-3' src="sky-bg-3.png" alt="island" />
+
+
           </div>
         </div>
 

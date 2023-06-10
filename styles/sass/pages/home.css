@@ -155,6 +155,63 @@
      object-fit: cover;
 }
 
+.main-bg__sky .mb-sk-2 {
+  -webkit-animation-name: cloudAnim_1;
+          animation-name: cloudAnim_1;
+  -webkit-animation-duration: 18s;
+          animation-duration: 18s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes cloudAnim_1 {
+  0% {
+    -webkit-transform: scale(1) translateX(0);
+            transform: scale(1) translateX(0);
+  }
+  25% {
+    -webkit-transform: scale(1.03) translateX(5px);
+            transform: scale(1.03) translateX(5px);
+  }
+  50% {
+    -webkit-transform: scale(1.05) translateX(15px);
+            transform: scale(1.05) translateX(15px);
+  }
+  75% {
+    -webkit-transform: scale(1.02) translateX(5px);
+            transform: scale(1.02) translateX(5px);
+  }
+  75% {
+    -webkit-transform: scale(1) translateX(0);
+            transform: scale(1) translateX(0);
+  }
+}
+
+@keyframes cloudAnim_1 {
+  0% {
+    -webkit-transform: scale(1) translateX(0);
+            transform: scale(1) translateX(0);
+  }
+  25% {
+    -webkit-transform: scale(1.03) translateX(5px);
+            transform: scale(1.03) translateX(5px);
+  }
+  50% {
+    -webkit-transform: scale(1.05) translateX(15px);
+            transform: scale(1.05) translateX(15px);
+  }
+  75% {
+    -webkit-transform: scale(1.02) translateX(5px);
+            transform: scale(1.02) translateX(5px);
+  }
+  75% {
+    -webkit-transform: scale(1) translateX(0);
+            transform: scale(1) translateX(0);
+  }
+}
+
 .main-bg__sky.item-hovered {
   -webkit-filter: blur(5px) grayscale(0.3);
           filter: blur(5px) grayscale(0.3);
@@ -174,6 +231,81 @@
 
 .front-spites img {
   width: 100%;
+}
+
+.front-spites .fs-absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.front-spites .fs-absolute img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.front-spites .fs-sp-1 {
+  -webkit-animation-name: fs_cloud_anim_1;
+          animation-name: fs_cloud_anim_1;
+  -webkit-animation-name: cloudAnim_1;
+          animation-name: cloudAnim_1;
+  -webkit-animation-duration: 18s;
+          animation-duration: 18s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes fs_cloud_anim_1 {
+  0% {
+    -webkit-transform: scale(1) translateX(0);
+            transform: scale(1) translateX(0);
+  }
+  25% {
+    -webkit-transform: scale(1.03) translateX(5px);
+            transform: scale(1.03) translateX(5px);
+  }
+  50% {
+    -webkit-transform: scale(1.05) translateX(15px);
+            transform: scale(1.05) translateX(15px);
+  }
+  75% {
+    -webkit-transform: scale(1.02) translateX(5px);
+            transform: scale(1.02) translateX(5px);
+  }
+  75% {
+    -webkit-transform: scale(1) translateX(0);
+            transform: scale(1) translateX(0);
+  }
+}
+
+@keyframes fs_cloud_anim_1 {
+  0% {
+    -webkit-transform: scale(1) translateX(0);
+            transform: scale(1) translateX(0);
+  }
+  25% {
+    -webkit-transform: scale(1.03) translateX(5px);
+            transform: scale(1.03) translateX(5px);
+  }
+  50% {
+    -webkit-transform: scale(1.05) translateX(15px);
+            transform: scale(1.05) translateX(15px);
+  }
+  75% {
+    -webkit-transform: scale(1.02) translateX(5px);
+            transform: scale(1.02) translateX(5px);
+  }
+  75% {
+    -webkit-transform: scale(1) translateX(0);
+            transform: scale(1) translateX(0);
+  }
 }
 
 .front-spites.item-hovered {
