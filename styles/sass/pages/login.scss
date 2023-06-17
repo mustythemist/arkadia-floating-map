@@ -1,0 +1,15 @@
+.login-main {
+  background-image: url('../../../public/main-sky.jpg');
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  &__box {
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    img {
+      max-width: 400px;
+    }
+  }
+}

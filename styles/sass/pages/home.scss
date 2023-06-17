@@ -37,9 +37,6 @@
 
 
 
-
-
-
 .main-bg.item-hovered {
   .main-bg__img {
     >img {
@@ -175,6 +172,8 @@
 
 }
 
+.fs-blsp-1 {}
+
 .main-bg__sky.item-hovered {
   filter: blur(5px) grayscale(0.3);
   opacity: 0.5;
@@ -216,6 +215,19 @@
     animation-iteration-count: infinite;
   }
 
+  .fs-blsp-1 {
+    animation: fs_baloon_sp1 10s infinite alternate forwards;
+  }
+
+  .fs-blsp-2 {
+    animation: fs_baloon_sp1 12s infinite alternate forwards;
+  }
+  .fs-blsp-3 {
+    animation: fs_baloon_sp1 15s infinite alternate forwards;
+  }
+
+
+
 }
 
 @keyframes fs_cloud_anim_1 {
@@ -236,6 +248,52 @@
   }
 
 }
+
+@keyframes fs_baloon_sp1 {
+  0% {
+    transform: scale(1) translate(0, 0);
+  }
+  25% {
+    transform: scale(1) translate(5px, 20px);
+  }
+  75% {
+    transform: scale(1) translate(15px, -10px);
+  }
+  75% {
+    transform: scale(1) translate(5px, 10px);
+  }
+}
+
+@keyframes fs_baloon_sp2 {
+  0% {
+    transform: scale(1) translate(0, 0);
+  }
+  25% {
+    transform: scale(1) translate(-5px, 20px);
+  }
+  75% {
+    transform: scale(1) translate(5px, -10px);
+  }
+  75% {
+    transform: scale(1) translate(7px, 5px);
+  }
+}
+@keyframes fs_baloon_sp3 {
+  0% {
+    transform: scale(1) translate(0, 0);
+  }
+  25% {
+    transform: scale(1) translate(5px, 20px);
+  }
+  75% {
+    transform: scale(1) translate(15px, -10px);
+  }
+  75% {
+    transform: scale(1) translate(5px, 10px);
+  }
+}
+
+
 
 
 
