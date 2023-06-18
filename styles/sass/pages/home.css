@@ -41,6 +41,60 @@
           filter: brightness(1.4);
 }
 
+.main-bg__asset-items--purle-friend {
+  animation: purpleANim 20s infinite alternate-reverse;
+}
+
+.main-bg__purple-friend {
+  position: absolute;
+}
+
+@-webkit-keyframes purpleANim {
+  0% {
+    -webkit-transform: scale(0.5) translate(0, 0);
+            transform: scale(0.5) translate(0, 0);
+  }
+  25% {
+    -webkit-transform: scale(0.6) translate(-35px, 60px);
+            transform: scale(0.6) translate(-35px, 60px);
+  }
+  50% {
+    -webkit-transform: scale(0.7) translate(-185px, 185px);
+            transform: scale(0.7) translate(-185px, 185px);
+  }
+  75% {
+    -webkit-transform: scale(0.6) translate(-55px, 85px);
+            transform: scale(0.6) translate(-55px, 85px);
+  }
+  100% {
+    -webkit-transform: scale(0.5) translate(0, 0);
+            transform: scale(0.5) translate(0, 0);
+  }
+}
+
+@keyframes purpleANim {
+  0% {
+    -webkit-transform: scale(0.5) translate(0, 0);
+            transform: scale(0.5) translate(0, 0);
+  }
+  25% {
+    -webkit-transform: scale(0.6) translate(-35px, 60px);
+            transform: scale(0.6) translate(-35px, 60px);
+  }
+  50% {
+    -webkit-transform: scale(0.7) translate(-185px, 185px);
+            transform: scale(0.7) translate(-185px, 185px);
+  }
+  75% {
+    -webkit-transform: scale(0.6) translate(-55px, 85px);
+            transform: scale(0.6) translate(-55px, 85px);
+  }
+  100% {
+    -webkit-transform: scale(0.5) translate(0, 0);
+            transform: scale(0.5) translate(0, 0);
+  }
+}
+
 .main-bg.item-hovered .main-bg__img > img {
   -webkit-filter: blur(13px);
           filter: blur(13px);
@@ -443,5 +497,12 @@
   opacity: 0.1;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+}
+
+.wallet-options {
+  position: fixed;
+  right: 22px;
+  top: 22px;
+  z-index: 11;
 }
 /*# sourceMappingURL=home.css.map */

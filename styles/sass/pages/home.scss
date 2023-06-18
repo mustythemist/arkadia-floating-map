@@ -33,9 +33,35 @@
     }
   }
 
+  &__asset-items--purle-friend {
+    animation: purpleANim 20s infinite alternate-reverse;
+  }
+
+  &__purple-friend {
+    position: absolute;
+  }
+
 }
 
+@keyframes purpleANim {
+  0% {
+    transform: scale(0.5) translate(0, 0);
+  }
+  25% {
+    transform: scale(0.6) translate(-35px, 60px);
+  }
+  50% {
+    transform: scale(0.7) translate(-185px, 185px);
+  }
+  75% {
+    transform: scale(0.6) translate(-55px, 85px);
+  }
+  100% {
+    transform: scale(0.5) translate(0, 0);
+  }
 
+
+}
 
 .main-bg.item-hovered {
   .main-bg__img {
@@ -307,3 +333,13 @@
 // .menu-options__item--i1:hover+.main-bg__img .ai-1 {
 //   transform: scale(2);
 // }
+
+
+
+
+.wallet-options {
+  position: fixed;
+  right: 22px;
+  top: 22px;
+  z-index: 11;
+}

@@ -6,8 +6,9 @@
   justify-content: center;
   &__box {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    justify-content: center;
+    align-items: center;
     img {
       max-width: 400px;
     }
