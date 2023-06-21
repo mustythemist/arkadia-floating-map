@@ -21,6 +21,7 @@ const Login = () => {
     <div className="login-main">
       <div className="login-main__box">
         <img src="text-logo.webp" alt="" />
+        <p>Connect You Wallet to Visit the Arkadia <br />Floating Guarden</p>
         <ConnectWallet />
         <div>
           {/* <h2>{isLoading ? 'Loading...' : ''}</h2> */}

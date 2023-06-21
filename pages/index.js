@@ -33,11 +33,13 @@ export default function Home() {
         setIsPurpleFriendFound(true)
       } else {
         console.log('Not found');
+        setIsPurpleFriendFound(false)
+
       }
 
     }
 
-  }, [address]);
+  }, [data, address]);
 
   useEffect(() => {
     // Get the elements
