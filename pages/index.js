@@ -150,7 +150,6 @@ export default function Home() {
             {/* <img src="sky-bg-4.png" alt="island" /> */}
 
             <div className='main-bg__container'>
-              <h2>asd</h2>
               <div className='main-bg__asset-items '>
                 <img className='ai-1' src="i1.png" alt="" />
               </div>
