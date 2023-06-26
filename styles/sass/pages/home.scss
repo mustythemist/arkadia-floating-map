@@ -4,6 +4,8 @@
     height: 100%;
     position: relative;
     z-index: 1;
+    animation: islandEntrance 1s;
+    transition: 2s ease;
     img {
       width: 100%;
       margin: 0 auto;
@@ -316,6 +318,16 @@
   }
   75% {
     transform: scale(1) translate(5px, 10px);
+  }
+}
+
+
+@keyframes islandEntrance {
+  0% {
+    transform: translate(0, 4%);
+  }
+  100% {
+    transform: translate(0, 0);
   }
 }
 

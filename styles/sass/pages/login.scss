@@ -1,5 +1,5 @@
 .login-main {
-  background-image: url('../../../public/main-sky.jpg');
+  // background-image: url('../../../public/main-sky.jpg');
   height: 100vh;
   display: grid;
   align-items: center;
@@ -9,12 +9,42 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
     img {
       max-width: 400px;
+      animation: logoAnim 2s;
+
     }
     p {
       text-align: center;
       font-size: 20px;
     }
+  }
+  &__bg-img {
+    position: absolute;
+    img {
+      animation: bgAnim 10s ease-in-out infinite alternate-reverse;
+    }
+  }
+}
+
+
+
+@keyframes logoAnim {
+  0% {
+    transform: scale(0.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+@keyframes bgAnim {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
   }
 }
