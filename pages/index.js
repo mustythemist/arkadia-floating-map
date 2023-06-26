@@ -145,18 +145,24 @@ export default function Home() {
           </div>
 
           <div className='main-bg__img'>
+
             <img src="island-main2.png" alt="island" />
             {/* <img src="sky-bg-4.png" alt="island" /> */}
 
-            <div className='main-bg__asset-items '>
-              <img className='ai-1' src="i1.png" alt="" />
+            <div className='main-bg__container'>
+              <h2>asd</h2>
+              <div className='main-bg__asset-items '>
+                <img className='ai-1' src="i1.png" alt="" />
+              </div>
+              <div className='main-bg__asset-items '>
+                <img className='ai-2' src="i2.png" alt="" />
+              </div>
+              <div className='main-bg__asset-items '>
+                <img className='ai-3' src="i3.png" alt="" />
+              </div>
             </div>
-            <div className='main-bg__asset-items '>
-              <img className='ai-2' src="i2.png" alt="" />
-            </div>
-            <div className='main-bg__asset-items '>
-              <img className='ai-3' src="i3.png" alt="" />
-            </div>
+
+
             {
               isPurpleFriendFound && <div className='main-bg__asset-items main-bg__asset-items--purle-friend'>
                 <img src="pupleFrndFrame.png" alt="" />
