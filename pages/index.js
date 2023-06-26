@@ -170,16 +170,16 @@ export default function Home() {
             <div data-menu-item='dm-1' className='menu-options__item menu-options__item--i1'>
               <div className='menu-tip'>
                 <div className='menu-tip__info'>
-                  <h4>Paragraph</h4>
-                  <p>This is some sample Text</p>
+                  <h4>Salon</h4>
+                  <p>  Get enough strand of hair<br /> NFTs to mint your FREN</p>
                 </div>
               </div>
             </div>
             <div data-menu-item='dm-2' className='menu-options__item menu-options__item--i2'>
               <div className='menu-tip'>
                 <div className='menu-tip__info'>
-                  <h4>Paragraph</h4>
-                  <p>This is some sample Text</p>
+                  <h4>Castle of Lore</h4>
+                  <p>Learn about the history of Arkadia</p>
                 </div>
               </div>
             </div>

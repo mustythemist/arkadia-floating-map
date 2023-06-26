@@ -39,6 +39,7 @@ a {
   width: 100%;
 }
 
-p {
+p,
+h4 {
   font-family: 'Cinzel', serif;
 }

@@ -140,12 +140,14 @@
 
 .menu-options__item .menu-tip .menu-tip__info h4 {
   margin: 0 0;
+  font-size: 16px;
 }
 
 .menu-options__item .menu-tip .menu-tip__info p {
   margin: 0 0;
   white-space: nowrap;
   color: #ccc;
+  font-size: 13px;
 }
 
 .menu-options .item-hovered .menu-tip {

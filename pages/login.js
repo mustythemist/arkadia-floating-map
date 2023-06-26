@@ -6,6 +6,7 @@ import { useRouter } from "next/router";
 const Login = () => {
   const router = useRouter();
 
+
   const { data, address, isLoading, error } = NftData();
 
   useEffect(() => {
@@ -15,6 +16,10 @@ const Login = () => {
         router.push('/');
       }, 2000);
     }
+    const audio = new Audio('music/Flying_Islands_Theme.wav');
+
+    audio.loop = true; // Set the music to loop
+    audio.play();
   }, [address]);
 
   return (
