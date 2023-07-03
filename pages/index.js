@@ -154,7 +154,8 @@ function Home() {
 
             <div className='main-bg__img'>
 
-              <img src="island-main2.png" alt="island" />
+              {/* <img src="island-main2.png" alt="island" /> */}
+              <img src="main-island-up-2.png" alt="island" />
               {/* <img src="sky-bg-4.png" alt="island" /> */}
 
               <div className='main-bg__container'>
@@ -167,6 +168,16 @@ function Home() {
                 <div className='main-bg__asset-items '>
                   <img className='ai-3' src="i3.png" alt="" />
                 </div>
+                <div className='main-bg__asset-items '>
+                  <img className='ai-4' src="i4.png" alt="" />
+                </div>
+                <div className='main-bg__asset-items '>
+                  <img className='ai-5' src="i6.png" alt="" />
+                </div>
+
+
+
+
               </div>
 
 
@@ -204,6 +215,27 @@ function Home() {
                   </div>
                 </div>
               </div>
+              <div data-menu-item='dm-3' className='menu-options__item menu-options__item--i4'>
+                <div className='menu-tip'>
+                  <div className='menu-tip__info'>
+                    <h4>Honey</h4>
+                    <p>This is honey</p>
+                  </div>
+                </div>
+              </div>
+              <div data-menu-item='dm-3' className='menu-options__item menu-options__item--i5'>
+                <div className='menu-tip'>
+                  <div className='menu-tip__info'>
+                    <h4>Bridge</h4>
+                    <p>This is some sample Text</p>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
 
             </div>
 

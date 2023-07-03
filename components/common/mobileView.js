@@ -51,11 +51,24 @@ const MobileView = () => {
       <div className="sm-map-menu-overlay">
         <div className="sm-map-menu-overlay__container">
           <div data-menu-item='1' className="sm-map-menu-overlay__menu sm-map-menu-overlay__menu--item-1">
-            <span></span>
+            <span>Castle</span>
           </div>
           <div data-menu-item='2' className="sm-map-menu-overlay__menu sm-map-menu-overlay__menu--item-2">
-            <span></span>
+            <span>Saloon</span>
           </div>
+          <div data-menu-item='3' className="sm-map-menu-overlay__menu sm-map-menu-overlay__menu--item-3">
+            <span>Honey</span>
+          </div>
+          <div data-menu-item='4' className="sm-map-menu-overlay__menu sm-map-menu-overlay__menu--item-4">
+            <span>Bridge</span>
+          </div>
+          <div data-menu-item='4' className="sm-map-menu-overlay__menu sm-map-menu-overlay__menu--item-5">
+            <span>Ark</span>
+          </div>
+
+
+
+
 
 
         </div>
@@ -64,9 +77,11 @@ const MobileView = () => {
         <img src="i1.png" alt="" />
         <img src="i2.png" alt="" />
         <img src="i3.png" alt="" />
+        <img src="i4.png" alt="" />
+        <img src="i6.png" alt="" />
       </div>
       <div className="sm-map-bg">
-        <img src="island-main2.png" alt="" />
+        <img src="main-island-up-2.png" alt="" />
       </div>
       <div className="sm-map-bg-sky">
         <img src="sky-bg-1.png" alt="" />
