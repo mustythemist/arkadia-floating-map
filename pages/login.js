@@ -25,7 +25,7 @@ const Login = () => {
   return (
     <div className="login-main">
       <div className="login-main__bg-img">
-        <img src="main-sky.jpg" alt="" />
+        <img src="sky.png" alt="" />
       </div>
       <div className="login-main__box">
         <img src="text-logo.webp" alt="" />
