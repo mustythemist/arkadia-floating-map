@@ -6,10 +6,17 @@ import { useEffect, useState } from 'react';
 import { ConnectWallet } from '@thirdweb-dev/react';
 import { useRouter } from 'next/router';
 import NftData from '../components/common/nftData';
+import { useMediaQuery } from 'react-responsive';
+import MobileView from '../components/common/mobileView';
+import dynamic from "next/dynamic";
 
-export default function Home() {
+function Home() {
 
   const router = useRouter();
+
+  const isDesktopOrLaptop = useMediaQuery({
+    query: '(min-width: 1224px)'
+  })
 
   const { data, address, isLoading, error } = NftData();
 
@@ -133,80 +140,88 @@ export default function Home() {
           <ConnectWallet />
 
         </div>
-        <div className='main-bg'>
+        {
+          isDesktopOrLaptop && <div className='main-bg'>
 
-          <div className='front-spites'>
-            <img className='fs-sp-1' src="sky-bg-4.png" alt="island" />
-            <div className='fs-absolute'>
-              <img className='fs-blsp-1' src="bl-1.png" alt="island" />
-              <img className='fs-blsp-2' src="bl-2.png" alt="island" />
-              <img className='fs-blsp-3' src="bl-3.png" alt="island" />
-            </div>
-          </div>
-
-          <div className='main-bg__img'>
-
-            <img src="island-main2.png" alt="island" />
-            {/* <img src="sky-bg-4.png" alt="island" /> */}
-
-            <div className='main-bg__container'>
-              <div className='main-bg__asset-items '>
-                <img className='ai-1' src="i1.png" alt="" />
-              </div>
-              <div className='main-bg__asset-items '>
-                <img className='ai-2' src="i2.png" alt="" />
-              </div>
-              <div className='main-bg__asset-items '>
-                <img className='ai-3' src="i3.png" alt="" />
+            <div className='front-spites'>
+              <img className='fs-sp-1' src="sky-bg-4.png" alt="island" />
+              <div className='fs-absolute'>
+                <img className='fs-blsp-1' src="bl-1.png" alt="island" />
+                <img className='fs-blsp-2' src="bl-2.png" alt="island" />
+                <img className='fs-blsp-3' src="bl-3.png" alt="island" />
               </div>
             </div>
 
+            <div className='main-bg__img'>
 
-            {
-              isPurpleFriendFound && <div className='main-bg__asset-items main-bg__asset-items--purle-friend'>
-                <img src="pupleFrndFrame.png" alt="" />
-              </div>
-            }
+              <img src="island-main2.png" alt="island" />
+              {/* <img src="sky-bg-4.png" alt="island" /> */}
 
-
-          </div>
-
-          <div className='menu-options'>
-            <div data-menu-item='dm-1' className='menu-options__item menu-options__item--i1'>
-              <div className='menu-tip'>
-                <div className='menu-tip__info'>
-                  <h4>Salon</h4>
-                  <p>  Get enough strand of hair<br /> NFTs to mint your FREN</p>
+              <div className='main-bg__container'>
+                <div className='main-bg__asset-items '>
+                  <img className='ai-1' src="i1.png" alt="" />
+                </div>
+                <div className='main-bg__asset-items '>
+                  <img className='ai-2' src="i2.png" alt="" />
+                </div>
+                <div className='main-bg__asset-items '>
+                  <img className='ai-3' src="i3.png" alt="" />
                 </div>
               </div>
+
+
+              {
+                isPurpleFriendFound && <div className='main-bg__asset-items main-bg__asset-items--purle-friend'>
+                  <img src="pupleFrndFrame.png" alt="" />
+                </div>
+              }
+
+
             </div>
-            <div data-menu-item='dm-2' className='menu-options__item menu-options__item--i2'>
-              <div className='menu-tip'>
-                <div className='menu-tip__info'>
-                  <h4>Castle of Lore</h4>
-                  <p>Learn about the history of Arkadia</p>
+
+            <div className='menu-options'>
+              <div data-menu-item='dm-1' className='menu-options__item menu-options__item--i1'>
+                <div className='menu-tip'>
+                  <div className='menu-tip__info'>
+                    <h4>Salon</h4>
+                    <p>  Get enough strand of hair<br /> NFTs to mint your FREN</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div data-menu-item='dm-3' className='menu-options__item menu-options__item--i3'>
-              <div className='menu-tip'>
-                <div className='menu-tip__info'>
-                  <h4>Paragraph</h4>
-                  <p>This is some sample Text</p>
+              <div data-menu-item='dm-2' className='menu-options__item menu-options__item--i2'>
+                <div className='menu-tip'>
+                  <div className='menu-tip__info'>
+                    <h4>Castle of Lore</h4>
+                    <p>Learn about the history of Arkadia</p>
+                  </div>
                 </div>
               </div>
+              <div data-menu-item='dm-3' className='menu-options__item menu-options__item--i3'>
+                <div className='menu-tip'>
+                  <div className='menu-tip__info'>
+                    <h4>Paragraph</h4>
+                    <p>This is some sample Text</p>
+                  </div>
+                </div>
+              </div>
+
             </div>
 
+            <div className='main-bg__sky'>
+              <img className='mb-sk-1' src="sky-bg-1.png" alt="island" />
+              <img className='mb-sk-2' src="sky-bg-2.png" alt="island" />
+              <img className='mb-sk-3' src="sky-bg-3.png" alt="island" />
+
+
+            </div>
           </div>
+        }
 
-          <div className='main-bg__sky'>
-            <img className='mb-sk-1' src="sky-bg-1.png" alt="island" />
-            <img className='mb-sk-2' src="sky-bg-2.png" alt="island" />
-            <img className='mb-sk-3' src="sky-bg-3.png" alt="island" />
+        {
+          !isDesktopOrLaptop && <MobileView />
+        }
 
 
-          </div>
-        </div>
       </div>
 
     </div>
@@ -214,3 +229,6 @@ export default function Home() {
 
 
 }
+
+
+export default dynamic(() => Promise.resolve(Home), { ssr: false })
