@@ -55,6 +55,8 @@
       >div {
         position: absolute;
         cursor: pointer;
+        // background: #5124514d;
+
         span {
           background: #13072396;
           padding: 2px 9px;
@@ -95,7 +97,7 @@
       width: 58px;
       height: 72px;
       span {
-        right: -60px;
+        right: 50px;
       }
     }
     &__menu--item-4 {
@@ -115,9 +117,23 @@
       width: 67px;
       height: 72px;
       span {
-        right: 36px;
+        right: 37px;
       }
     }
+
+
+    &__menu--item-6 {
+      // background: #5124510e;
+      top: 32%;
+      left: 45%;
+      width: 82px;
+      height: 52px;
+      span {
+        right: -84px;
+      }
+    }
+
+
 
 
 
@@ -164,6 +180,9 @@
         transform: translate(-45%, 7%);
       }
       &:nth-child(5) {
+        transform: translate(-50%, 4%);
+      }
+      &:nth-child(6) {
         transform: translate(-50%, 4%);
       }
 

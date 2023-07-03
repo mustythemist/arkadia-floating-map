@@ -65,6 +65,9 @@ const MobileView = () => {
           <div data-menu-item='4' className="sm-map-menu-overlay__menu sm-map-menu-overlay__menu--item-5">
             <span>Ark</span>
           </div>
+          <div data-menu-item='4' className="sm-map-menu-overlay__menu sm-map-menu-overlay__menu--item-6">
+            <span>Purple Trees</span>
+          </div>
 
 
 
@@ -79,6 +82,7 @@ const MobileView = () => {
         <img src="i3.png" alt="" />
         <img src="i4.png" alt="" />
         <img src="i6.png" alt="" />
+        <img src="i5.png" alt="" />
       </div>
       <div className="sm-map-bg">
         <img src="main-island-up-2.png" alt="" />

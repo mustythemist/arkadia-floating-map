@@ -27,6 +27,8 @@
     img {
       animation: bgAnim 10s ease-in-out infinite alternate-reverse;
       width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
 }

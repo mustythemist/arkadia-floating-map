@@ -222,6 +222,18 @@
   right: 82px;
 }
 
+.menu-options__item--i6 {
+  left: 41%;
+  top: 33%;
+  width: 168px;
+  height: 77px;
+}
+
+.menu-options__item--i6 .menu-tip {
+  top: 60px !important;
+  right: 82px;
+}
+
 .main-bg__sky {
   position: absolute;
   top: 0;

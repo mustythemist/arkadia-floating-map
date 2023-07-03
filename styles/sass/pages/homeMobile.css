@@ -118,7 +118,7 @@
 }
 
 .sm-container .sm-map-menu-overlay__menu--item-3 span {
-  right: -60px;
+  right: 50px;
 }
 
 .sm-container .sm-map-menu-overlay__menu--item-4 {
@@ -140,7 +140,18 @@
 }
 
 .sm-container .sm-map-menu-overlay__menu--item-5 span {
-  right: 36px;
+  right: 37px;
+}
+
+.sm-container .sm-map-menu-overlay__menu--item-6 {
+  top: 32%;
+  left: 45%;
+  width: 82px;
+  height: 52px;
+}
+
+.sm-container .sm-map-menu-overlay__menu--item-6 span {
+  right: -84px;
 }
 
 .sm-container .sm-map-top-menu {
@@ -199,6 +210,11 @@
 }
 
 .sm-container .sm-map-items img:nth-child(5) {
+  -webkit-transform: translate(-50%, 4%);
+          transform: translate(-50%, 4%);
+}
+
+.sm-container .sm-map-items img:nth-child(6) {
   -webkit-transform: translate(-50%, 4%);
           transform: translate(-50%, 4%);
 }

@@ -174,6 +174,10 @@ function Home() {
                 <div className='main-bg__asset-items '>
                   <img className='ai-5' src="i6.png" alt="" />
                 </div>
+                <div className='main-bg__asset-items '>
+                  <img className='ai-6' src="i5.png" alt="" />
+                </div>
+
 
 
 
@@ -210,12 +214,12 @@ function Home() {
               <div data-menu-item='dm-3' className='menu-options__item menu-options__item--i3'>
                 <div className='menu-tip'>
                   <div className='menu-tip__info'>
-                    <h4>Paragraph</h4>
+                    <h4>Ark</h4>
                     <p>This is some sample Text</p>
                   </div>
                 </div>
               </div>
-              <div data-menu-item='dm-3' className='menu-options__item menu-options__item--i4'>
+              <div data-menu-item='dm-4' className='menu-options__item menu-options__item--i4'>
                 <div className='menu-tip'>
                   <div className='menu-tip__info'>
                     <h4>Honey</h4>
@@ -223,7 +227,7 @@ function Home() {
                   </div>
                 </div>
               </div>
-              <div data-menu-item='dm-3' className='menu-options__item menu-options__item--i5'>
+              <div data-menu-item='dm-5' className='menu-options__item menu-options__item--i5'>
                 <div className='menu-tip'>
                   <div className='menu-tip__info'>
                     <h4>Bridge</h4>
@@ -231,6 +235,16 @@ function Home() {
                   </div>
                 </div>
               </div>
+              <div data-menu-item='dm-6' className='menu-options__item menu-options__item--i6'>
+                <div className='menu-tip'>
+                  <div className='menu-tip__info'>
+                    <h4>Purple Trees</h4>
+                    <p>This is some sample Text</p>
+                  </div>
+                </div>
+              </div>
+
+
 
 
 
