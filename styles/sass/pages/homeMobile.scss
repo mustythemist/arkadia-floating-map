@@ -1,3 +1,5 @@
+$menuActiveScale: 1.1;
+
 .sm-container {
   height: 100vh;
   display: flex;
@@ -56,7 +58,6 @@
         position: absolute;
         cursor: pointer;
         // background: #5124514d;
-
         span {
           background: #13072396;
           padding: 2px 9px;
@@ -66,6 +67,7 @@
           opacity: 0;
           transform: scale(0.3);
           transition: all 0.5s;
+          color: #fff;
         }
       }
     }
@@ -201,11 +203,11 @@
 
   .sm-map-bg {
     filter: grayscale(70%);
-    transform: scale(1.05);
+    transform: scale($menuActiveScale);
   }
 
   .sm-map-items {
-    transform: translate(-50%, -50%) scale(1.05);
+    transform: translate(-50%, -50%) scale($menuActiveScale);
     img {
       filter: brightness(1.3);
     }

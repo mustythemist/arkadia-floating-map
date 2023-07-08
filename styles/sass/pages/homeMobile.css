@@ -85,6 +85,7 @@
           transform: scale(0.3);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  color: #fff;
 }
 
 .sm-container .sm-map-menu-overlay__menu--item-1 {
@@ -227,13 +228,13 @@
 .menu-clicked .sm-map-bg {
   -webkit-filter: grayscale(70%);
           filter: grayscale(70%);
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .menu-clicked .sm-map-items {
-  -webkit-transform: translate(-50%, -50%) scale(1.05);
-          transform: translate(-50%, -50%) scale(1.05);
+  -webkit-transform: translate(-50%, -50%) scale(1.1);
+          transform: translate(-50%, -50%) scale(1.1);
 }
 
 .menu-clicked .sm-map-items img {
