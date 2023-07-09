@@ -171,27 +171,29 @@ function Home() {
                 <div className='main-bg__asset-items '>
                   <img className='ai-4' src="i4.png" alt="" />
                 </div>
-                <div className='main-bg__asset-items '>
+                {/* <div className='main-bg__asset-items '>
                   <img className='ai-5' src="i6.png" alt="" />
-                </div>
+                </div> */}
                 <div className='main-bg__asset-items '>
                   <img className='ai-6' src="i5.png" alt="" />
                 </div>
-
-
-
+                <div className='main-bg__asset-items '>
+                  <img className='ai-7' src="i7.png" alt="" />
+                </div>
+                <div className='main-bg__asset-items '>
+                  <img className='ai-7' src="i8.png" alt="" />
+                </div>
+                <div className='main-bg__asset-items '>
+                  <img className='ai-7' src="i9.png" alt="" />
+                </div>
 
 
               </div>
-
-
               {
                 isPurpleFriendFound && <div className='main-bg__asset-items main-bg__asset-items--purle-friend'>
                   <img src="pupleFrndFrame.png" alt="" />
                 </div>
               }
-
-
             </div>
 
             <div className='menu-options'>
@@ -227,14 +229,14 @@ function Home() {
                   </div>
                 </div>
               </div>
-              <div data-menu-item='dm-5' className='menu-options__item menu-options__item--i5'>
+              {/* <div data-menu-item='dm-5' className='menu-options__item menu-options__item--i5'>
                 <div className='menu-tip'>
                   <div className='menu-tip__info'>
                     <h4>Bridge</h4>
                     <p>This is some sample Text</p>
                   </div>
                 </div>
-              </div>
+              </div> */}
               <div data-menu-item='dm-6' className='menu-options__item menu-options__item--i6'>
                 <div className='menu-tip'>
                   <div className='menu-tip__info'>
@@ -244,13 +246,31 @@ function Home() {
                 </div>
               </div>
 
+              <div data-menu-item='dm-7' className='menu-options__item menu-options__item--i7'>
+                <div className='menu-tip'>
+                  <div className='menu-tip__info'>
+                    <h4>Fruit Market</h4>
+                    <p>Trade your Purple Fruits</p>
+                  </div>
+                </div>
+              </div>
 
-
-
-
-
-
-
+              <div data-menu-item='dm-8' className='menu-options__item menu-options__item--i8'>
+                <div className='menu-tip'>
+                  <div className='menu-tip__info'>
+                    <h4>Seed Deposit</h4>
+                    <p>Mint Seeds Weekly</p>
+                  </div>
+                </div>
+              </div>
+              <div data-menu-item='dm-9' className='menu-options__item menu-options__item--i9'>
+                <div className='menu-tip'>
+                  <div className='menu-tip__info'>
+                    <h4>Brdige</h4>
+                    <p>This is some sample Text</p>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div className='main-bg__sky'>

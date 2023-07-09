@@ -211,18 +211,6 @@
   height: 98px;
 }
 
-.menu-options__item--i5 {
-  left: 21%;
-  top: 2%;
-  width: 131px;
-  height: 77px;
-}
-
-.menu-options__item--i5 .menu-tip {
-  top: 60px !important;
-  right: 82px;
-}
-
 .menu-options__item--i6 {
   left: 41%;
   top: 33%;
@@ -233,6 +221,27 @@
 .menu-options__item--i6 .menu-tip {
   top: 60px !important;
   right: 82px;
+}
+
+.menu-options__item--i7 {
+  left: 32%;
+  top: 12%;
+  width: 84px;
+  height: 73px;
+}
+
+.menu-options__item--i8 {
+  left: 18%;
+  top: 35%;
+  width: 84px;
+  height: 73px;
+}
+
+.menu-options__item--i9 {
+  left: 16%;
+  top: 45%;
+  width: 123px;
+  height: 73px;
 }
 
 .main-bg__sky {

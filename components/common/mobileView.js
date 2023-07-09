@@ -59,19 +59,25 @@ const MobileView = () => {
           <div data-menu-item='3' className="sm-map-menu-overlay__menu sm-map-menu-overlay__menu--item-3">
             <span>Honey</span>
           </div>
-          <div data-menu-item='4' className="sm-map-menu-overlay__menu sm-map-menu-overlay__menu--item-4">
+          {/* <div data-menu-item='4' className="sm-map-menu-overlay__menu sm-map-menu-overlay__menu--item-4">
             <span>Bridge</span>
-          </div>
+          </div> */}
           <div data-menu-item='4' className="sm-map-menu-overlay__menu sm-map-menu-overlay__menu--item-5">
             <span>Ark</span>
           </div>
           <div data-menu-item='4' className="sm-map-menu-overlay__menu sm-map-menu-overlay__menu--item-6">
             <span>Purple Trees</span>
           </div>
+          <div data-menu-item='5' className="sm-map-menu-overlay__menu sm-map-menu-overlay__menu--item-7">
+            <span>Seed <br /> Deposit</span>
+          </div>
+          <div data-menu-item='6' className="sm-map-menu-overlay__menu sm-map-menu-overlay__menu--item-8">
+            <span>Fruit Market</span>
+          </div>
 
-
-
-
+          <div data-menu-item='7' className="sm-map-menu-overlay__menu sm-map-menu-overlay__menu--item-9">
+            <span>Bridge</span>
+          </div>
 
 
         </div>
@@ -81,8 +87,11 @@ const MobileView = () => {
         <img src="i2.png" alt="" />
         <img src="i3.png" alt="" />
         <img src="i4.png" alt="" />
-        <img src="i6.png" alt="" />
+        {/* <img src="i6.png" alt="" /> */}
         <img src="i5.png" alt="" />
+        <img src="i7.png" alt="" />
+        <img src="i8.png" alt="" />
+        <img src="i9.png" alt="" />
       </div>
       <div className="sm-map-bg">
         <img src="main-island-up-2.png" alt="" />
